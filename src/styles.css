@@ -1,0 +1,114 @@
+/* General layout */
+body {
+  background: #f0f4f8 url('../pic1.jpg') no-repeat center center fixed;
+   background-size: cover;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  margin: 0;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+
+#theme-toggle {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: transparent;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+main {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #1d7142;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* Inputs */
+textarea, input[type="time"] {
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: 1px solid #0078d7;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+button#save-btn {
+  background: #54deb2;
+  color: white;
+  border: none;
+  padding: 0.8rem;
+  border-radius: 8px;
+  width: 100%;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button#save-btn:hover {
+  background: #26a575;
+}
+
+.note-container {
+  margin-top: 1.5rem;
+}
+
+.note {
+  background: #e8f1fb;
+  border: 1px solid #0078d7;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 0.8rem;
+}
+
+.note strong {
+  color: #005fa3;
+}
+
+.note button {
+  background: none;
+  border: none;
+  color: #0078d7;
+  font-size: 0.9rem;
+  cursor: pointer;
+  margin-right: 0.5rem;
+}
+
+.note button:hover {
+  text-decoration: underline;
+}
+
+/* Dark mode */
+body.dark-mode {
+  background: #121212;
+  color: #eee;
+}
+
+body.dark-mode main {
+  background: #1e1e1e;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode textarea,
+body.dark-mode input,
+body.dark-mode button {
+  background: #2a2a2a;
+  color: #eee;
+  border-color: #555;
+}
+
+body.dark-mode .note {
+  background: #2a2a2a;
+  border-color: #555;
+}

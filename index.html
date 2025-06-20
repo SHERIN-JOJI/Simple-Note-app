@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Cute Notes App</title>
+  <link rel="stylesheet" href="./src/styles.css" />
+</head>
+<body>
+  <!-- Tiny dark mode toggle -->
+  <button id="theme-toggle" title="Toggle dark mode">🌙</button>
+
+  <main>
+    <h1>📝 Hey Sherin ,Welcome to Notes</h1>
+
+    <textarea id="note-input" rows="5" placeholder="Type your note here..."></textarea>
+
+    <input type="time" id="reminderTime" />
+
+    <button id="save-btn">💾 Save Note</button>
+
+    <p id="status"></p>
+
+    <div class="note-container"></div>
+  </main>
+
+  <script type="module" src="./src/main.ts"></script>
+</body>
+</html>
